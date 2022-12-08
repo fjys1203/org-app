@@ -15,9 +15,8 @@
       <div class="header__bar row">
         <h1 class="grid-6"><a href="/">CalendarApp</a></h1>
         <% if user_signed_in? %>
-        こんにちは<%= link_to current_user.nickname %>さん
           <div class="user_nav grid-6">
-            <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+            <%= link_to "ログアウト", user_session_path, method: :delete %>
             <%= link_to "投稿する", new_blog_path, class: "post" %>
           </div>
         <% else %>
