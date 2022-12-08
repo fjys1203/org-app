@@ -1,6 +1,9 @@
 class BlogsController < ApplicationController
+  before_action :move_to_index, except: [:index, :show]
+ 
   def index
     @blogs = Blog.all
+    @blog = Blog.new
   end
 
   def new
@@ -19,7 +22,7 @@ class BlogsController < ApplicationController
   def destroy
     @blog = Blog.find(params[:id])
     @blog.destroy
-    redirect_to blogs_path, notice:"削除しました"
+    redirect_to blogs_path, notice:"削除が完了しました"
   end
 
   def edit
@@ -29,7 +32,7 @@ class BlogsController < ApplicationController
   def update
     @blog = Blog.find(params[:id])
     if @blog.update(blog_parameter)
-      redirect_to blogs_path, notice: "編集しました"
+      redirect_to blogs_path, notice: "編集が完了しました"
     else
       render 'edit'
     end
@@ -39,6 +42,12 @@ class BlogsController < ApplicationController
 
   def blog_parameter
     params.require(:blog).permit(:title, :content, :start_time)
+  end
+
+  def move_to_index
+    unless user_signed_in?
+      redirect_to action: :index
+    end
   end
 
 end
