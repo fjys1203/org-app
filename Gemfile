@@ -54,3 +54,6 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise'
 gem "simple_calendar", "~> 2.0"
+group :production do
+  gem 'pg'
+end
