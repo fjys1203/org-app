@@ -1,4 +1,3 @@
-<% if user_signed_in? %>
 <p id="notice"><%= notice %></p>
 
 <h1></h1>
@@ -6,8 +5,8 @@
 <table>
   <thead>
     <tr>
-      <th>タイトル</th>
-      <th>時間</th>
+      <th></th>
+      <th></th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -15,11 +14,11 @@
   <tbody>
     <% @blogs.each do |blog| %>
       <tr>
-        <td><%= blog.title %></td>
-        <td><%= blog.start_time.strftime("%Y-%m-%d %H:%M") %></td>
-        <td><%= link_to '詳細', blog %></td>
+        <td><%#= blog.title %></td>
+        <td><%#= blog.start_time.strftime("%Y-%m-%d %H:%M") %></td>
+        <td><%#= link_to '詳細', blog %></td>
         <td><%#= link_to 'Edit', edit_blog_path(blog.id) %></td>
-        <td><%= link_to '消去', blog_path(blog.id), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%#= link_to '消去', blog_path(blog.id), method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -35,5 +34,4 @@
       <%= link_to blog.title, blog %>
     </div>
   <% end %>
-<% end %>
 <% end %>

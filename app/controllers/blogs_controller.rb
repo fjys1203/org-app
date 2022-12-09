@@ -1,4 +1,6 @@
 class BlogsController < ApplicationController
+  before_action :move_to_index
+
   def index
     @blogs = Blog.all
   end
@@ -12,8 +14,9 @@ class BlogsController < ApplicationController
   end
 
   def create
-    Blog.create(blog_parameter)
-    redirect_to blogs_path
+    @blog = Blog.create(blog_parameter)
+    @blog.save
+    redirect_to root_path
   end
 
   def destroy
@@ -39,6 +42,12 @@ class BlogsController < ApplicationController
 
   def blog_parameter
     params.require(:blog).permit(:title, :content, :start_time, :user_id)
+  end
+
+  def move_to_index
+    unless user_signed_in?
+      redirect_to action: :index
+    end
   end
 
 end
