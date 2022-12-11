@@ -2,7 +2,7 @@ class BlogsController < ApplicationController
   before_action :move_to_index
 
   def index
-    @blogs = Blog.all
+    @blogs = Blog.includes(:user).order("created_at DESC")
   end
 
   def new
@@ -41,7 +41,7 @@ class BlogsController < ApplicationController
   private
 
   def blog_parameter
-    params.require(:blog).permit(:title, :content, :start_time, :user_id)
+    params.require(:blog).permit(:title, :content, :start_time, :user_id).merge(user_id: current_user.id)
   end
 
   def move_to_index
