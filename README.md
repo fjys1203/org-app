@@ -1,14 +1,14 @@
 # README
 
 # アプリケーション名
-org-app
+CalendarApp
 
 # アプリケーション概要
 ユーザー機能がついた、カレンダーアプリとなっております。
 カレンダー内に日記を投稿することができます。
 
 # URL
-
+https://org-app.onrender.com
 
 # テスト用アカウント
  address: aaa@aaa
@@ -25,18 +25,28 @@ org-app
 # 洗い出した要件
 https://docs.google.com/spreadsheets/d/1jw9-8gB9qPaPH5NH-osb1s0OiOx0g5uQUzv3FGE3gGY/edit#gid=982722306
 
-# 実装した機能についての画像やGIFおよびその説明
-
 # 実装予定の機能
 日記の編集機能
+bootstrap導入によるビューの実装
 
 # データベース設計
 
 # 画面遷移図
 
 # 開発環境
+・フロントエンド
+・バックエンド
+・インフラ
+・テスト
+・テキストエディタ
+・タスク管理
 
 # ローカルでの動作方法
+% git clone https://github.com/fjys1203
+% cd org-app
+% bundle install
+% yarn install
 
 # 工夫したポイント
-
+ユーザーごとにカレンダーを管理できるようにした。
+simple calenderのgemを導入後、うまくビューに反映させられるよう工夫した。
