@@ -33,6 +33,7 @@ bootstrap導入によるビューの実装
 <img width="586" alt="スクリーンショット 2022-12-12 11 39 27" src="https://user-images.githubusercontent.com/116062133/206949320-0a3e06fb-72a7-4990-ad20-2e57676f0530.png">
 
 # 画面遷移図
+<img width="760" alt="スクリーンショット 2022-12-12 11 54 40" src="https://user-images.githubusercontent.com/116062133/206950941-9954afee-de16-4bed-ab63-6d3422a01733.png">
 
 # 開発環境
 ・フロントエンド
