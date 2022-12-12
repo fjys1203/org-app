@@ -1,7 +1,9 @@
 FactoryBot.define do
   factory :blog do
-    tytle {Faker::Lorem.sentence}
-    start_time { Faker::Time.strftime("%H:%M") }
-    content {Faker::Lorem.sentence}
+    association :user
+
+    title {"aaa"}
+    start_time { "2022-12-25-17:00" }
+    content {"aaa"}
   end
 end
