@@ -419,7 +419,7 @@ img {
 
 textarea {
   height: auto;
-  min-height: 50px;
+  min-height: 80px;
 }
 
 select {
@@ -642,7 +642,7 @@ html {
 }
 
 body {
-  padding-top: 60px;
+  padding-top: 80px;
 }
 
 h1,
@@ -652,7 +652,7 @@ h4,
 h5,
 h6,
 body {
-  line-height: 1.57;
+  line-height: 1.8;
   letter-spacing: 0.15em;
   font-size: 18px;
   color: rgb(75, 72, 72);
@@ -727,13 +727,13 @@ header.header div.header__bar.row div.grid-6 a.post:hover {
 }
 
 .title--big {
-  font-size: 1.5em;
+  font-size: 1.8em;
   font-weight: bold;
 }
 
 .title--big i {
   font-style: italic;
-  font-size: 1.8em;
+  font-size: 2em;
 }
 
 header.header {
@@ -745,7 +745,7 @@ header.header {
   left: 0;
   right: 0;
   z-index: 5;
-  height: 70px;
+  height: 75px;
 }
 
 header.header div.header__bar.row {
