@@ -31,6 +31,7 @@ https://docs.google.com/spreadsheets/d/1jw9-8gB9qPaPH5NH-osb1s0OiOx0g5uQUzv3FGE3
 日記の編集機能
 
 # データベース設計
+<img width="586" alt="スクリーンショット 2022-12-12 11 39 27" src="https://user-images.githubusercontent.com/116062133/206949320-0a3e06fb-72a7-4990-ad20-2e57676f0530.png">
 
 # 画面遷移図
 
