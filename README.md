@@ -1,5 +1,3 @@
-# README
-
 # アプリケーション名
 CalendarApp
 
@@ -25,6 +23,11 @@ https://org-app.onrender.com
 
 # 洗い出した要件
 https://docs.google.com/spreadsheets/d/1jw9-8gB9qPaPH5NH-osb1s0OiOx0g5uQUzv3FGE3gGY/edit#gid=982722306
+
+# 実装した機能についての画像やGIFおよびその説明
+[![Image from Gyazo](https://i.gyazo.com/f06bda75a0ec2a6329ece261b813e047.gif)](https://gyazo.com/f06bda75a0ec2a6329ece261b813e047)
+[![Image from Gyazo](https://i.gyazo.com/2bcbd2254b5cc85b1a29f06cbfa1d927.gif)](https://gyazo.com/2bcbd2254b5cc85b1a29f06cbfa1d927)
+[![Image from Gyazo](https://i.gyazo.com/618745fdec50cc956233b38d2e356db3.gif)](https://gyazo.com/618745fdec50cc956233b38d2e356db3)
 
 # 実装予定の機能
 日記の編集機能
@@ -52,4 +55,4 @@ bootstrap導入によるビューの実装
 
 # 工夫したポイント
 ユーザーごとにカレンダーを管理できるようにしました。
-simple calenderのgemを導入後、うまくビューに反映させられるよう工夫しました。
+simple calenderのgemを導入し、投稿した日記をビューに反映させられるよう工夫しました。
