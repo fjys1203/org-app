@@ -1,5 +1,6 @@
 <p id="notice"><%= notice %></p>
 
+<div class="header__bar row">
 <p>
   <strong>タイトル</strong>
   <%= @blog.title %>
@@ -17,3 +18,4 @@
 
 <%= link_to '日記を消去する', blog_path,method: :delete %> |
 <%= link_to 'カレンダーに戻る', blogs_path %>
+</div>
