@@ -30,7 +30,6 @@ https://docs.google.com/spreadsheets/d/1jw9-8gB9qPaPH5NH-osb1s0OiOx0g5uQUzv3FGE3
 [![Image from Gyazo](https://i.gyazo.com/618745fdec50cc956233b38d2e356db3.gif)](https://gyazo.com/618745fdec50cc956233b38d2e356db3)
 
 # 実装予定の機能
-日記の編集機能
 bootstrap導入によるビューの実装
 
 # データベース設計
