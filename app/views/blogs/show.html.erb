@@ -16,6 +16,7 @@
   <%= @blog.content %>
 </p>
 
-<%= link_to '日記を消去する', blog_path,method: :delete %> |
+<%= link_to '編集する', edit_blog_path %> | 
+<%= link_to '消去する', blog_path,method: :delete %> | 
 <%= link_to 'カレンダーに戻る', blogs_path %>
 </div>
