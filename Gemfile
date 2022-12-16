@@ -60,3 +60,4 @@ gem "simple_calendar", "~> 2.0"
 group :production do
   gem 'pg'
 end
+gem 'holiday_jp', '~> 0.7.0'

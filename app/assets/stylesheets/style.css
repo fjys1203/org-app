@@ -417,15 +417,6 @@ img {
   vertical-align: middle;
 }
 
-textarea {
-  height: auto;
-  min-height: 80px;
-}
-
-select {
-  width: 100%;
-}
-
 i {
   font-style: normal;
 }
@@ -470,71 +461,6 @@ ul li {
   margin-bottom: 0;
   max-width: 660px;
   *zoom: 1;
-}
-
-.row .grid-1,
-.row .grid-2,
-.row .grid-3,
-.row .grid-4,
-.row .grid-5,
-.row .grid-6,
-.row .grid-7,
-.row .grid-8,
-.row .grid-9,
-.row .grid-10,
-.row .grid-11,
-.row .grid-12 {
-  float: left;
-  margin-left: 0.9%;
-  margin-right: 0.9%;
-}
-
-.row .grid-1 {
-  width: 6.53333%;
-}
-
-.row .grid-2 {
-  width: 14.86667%;
-}
-
-.row .grid-3 {
-  width: 23.2%;
-}
-
-.row .grid-4 {
-  width: 31.53333%;
-}
-
-.row .grid-5 {
-  width: 39.86667%;
-}
-
-.row .grid-6 {
-  width: 48.2%;
-}
-
-.row .grid-7 {
-  width: 56.53333%;
-}
-
-.row .grid-8 {
-  width: 64.86667%;
-}
-
-.row .grid-9 {
-  width: 73.2%;
-}
-
-.row .grid-10 {
-  width: 81.53333%;
-}
-
-.row .grid-11 {
-  width: 89.86667%;
-}
-
-.row .grid-12 {
-  width: 98.2%;
 }
 
 .row:before,
@@ -717,12 +643,11 @@ header.header div.header__bar.row div.grid-6 a.post {
 
 .btn:hover,
 header.header div.header__bar.row div.grid-6 a.post:hover {
-  border-color: #2d697f;
-  color: #2d697f;
+  border-color: #7ed2f0;
+  color: #7ed2f0;
 }
 
 .title {
-  
   font-weight: bold;
 }
 
@@ -986,8 +911,8 @@ div.contents.row .success h3 {
 
 form input,
 form textarea {
-  width: 50%;
-  margin: 5px 0 15px;
+  width: 70%;
+  margin: 25px;
   padding: 10px;
   border: 1px solid #D8D8D8;
   border-radius: 5px;
