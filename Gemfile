@@ -61,3 +61,4 @@ group :production do
   gem 'pg'
 end
 gem 'holiday_jp', '~> 0.7.0'
+gem 'rails-i18n'

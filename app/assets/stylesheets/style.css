@@ -6,35 +6,11 @@
  * ========================================================================== */
 /*
  * Correct `block` display not defined in IE 8/9. */
-article,
-aside,
-details,
-figcaption,
-figure,
 footer,
 header,
-hgroup,
 main,
-nav,
-section,
-summary {
+nav {
   display: block;
-}
-
-/*
- * Correct `inline-block` display not defined in IE 8/9. */
-audio,
-canvas,
-video {
-  display: inline-block;
-}
-
-/*
- * Prevent modern browsers from displaying `audio` without controls.
- * Remove excess height in iOS 5 devices. */
-audio:not([controls]) {
-  display: none;
-  height: 0;
 }
 
 /*
@@ -76,34 +52,15 @@ a {
   background: transparent;
 }
 
-/*
- * Address `outline` inconsistency between Chrome and other browsers. */
-a:focus {
-  outline: thin dotted;
-}
-
-/*
- * Improve readability when focused and also mouse hovered in all browsers. */
-a:active,
-a:hover {
-  outline: 0;
-}
-
 /* ==========================================================================
  * Typography
  * ========================================================================== */
 /*
- * Address variable `h1` font-size and margin within `section` and `article`
+ * Address variable `h1` font-size and margin within `article`
  * contexts in Firefox 4+, Safari 5, and Chrome. */
 h1 {
   font-size: 5em;
   margin: 0.67em 0;
-}
-
-/*
- * Address styling not present in IE 8/9, Safari 5, and Chrome. */
-abbr[title] {
-  border-bottom: 1px dotted;
 }
 
 /*
@@ -113,73 +70,6 @@ strong {
   font-weight: bold;
 }
 
-/*
- * Address styling not present in Safari 5 and Chrome. */
-dfn {
-  font-style: italic;
-}
-
-/*
- * Address differences between Firefox and other browsers. */
-hr {
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  height: 0;
-}
-
-/*
- * Address styling not present in IE 8/9. */
-mark {
-  background: rgb(255, 128, 0);
-  color: black;
-}
-
-/*
- * Correct font family set oddly in Safari 5 and Chrome. */
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace, serif;
-  font-size: 1em;
-}
-
-/*
- * Improve readability of pre-formatted text in all browsers. */
-pre {
-  white-space: pre-wrap;
-}
-
-/*
- * Set consistent quote types. */
-q {
-  quotes: "“""”""‘""’";
-}
-
-/*
- * Address inconsistent and variable font size in all browsers. */
-small {
-  font-size: 80%;
-}
-
-/*
- * Prevent `sub` and `sup` affecting `line-height` in all browsers. */
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sup {
-  top: -0.5em;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
 /* ==========================================================================
  * Embedded content
  * ========================================================================== */
@@ -187,42 +77,6 @@ sub {
  * Remove border when inside `a` element in IE 8/9. */
 img {
   border: 0;
-}
-
-/*
- * Correct overflow displayed oddly in IE 9. */
-svg:not(:root) {
-  overflow: hidden;
-}
-
-/* ==========================================================================
- * Figures
- * ========================================================================== */
-/*
- * Address margin not present in IE 8/9 and Safari 5. */
-figure {
-  margin: 0;
-}
-
-/* ==========================================================================
- * Forms
- * ========================================================================== */
-/*
- * Define consistent border, margin, and padding. */
-fieldset {
-  border: 1px solid rgb(255, 94, 0);
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
-}
-
-/*
- * 1. Correct `color` not being inherited in IE 8/9.
- * 2. Remove padding so people aren't caught out if they zero out fieldsets. */
-legend {
-  border: 0;
-  /* 1 */
-  padding: 0;
-  /* 2 */
 }
 
 /*
@@ -259,12 +113,6 @@ select {
   text-transform: none;
 }
 
-/*
- * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
- *    and `video` controls.
- * 2. Correct inability to style clickable `input` types in iOS.
- * 3. Improve usability and consistency of cursor style between image-type
- *    `input` and others. */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -355,45 +203,9 @@ table {
   box-sizing: border-box;
 }
 
-img,
-object,
-embed {
+img {
   max-width: 100%;
   height: auto;
-}
-
-object,
-embed {
-  height: 100%;
-}
-
-.left {
-  float: left;
-}
-
-.right {
-  float: right;
-}
-
-.clearfix {
-  *zoom: 1;
-}
-
-.clearfix:after {
-  content: "\0020";
-  display: block;
-  height: 0;
-  clear: both;
-  overflow: hidden;
-  visibility: hidden;
-}
-
-.text-left {
-  text-align: left;
-}
-
-.text-right {
-  text-align: right;
 }
 
 .text-center {
@@ -408,10 +220,6 @@ embed {
   display: none;
 }
 
-.antialiased {
-  -webkit-font-smoothing: antialiased;
-}
-
 img {
   display: inline-block;
   vertical-align: middle;
@@ -419,21 +227,6 @@ img {
 
 i {
   font-style: normal;
-}
-
-.animate {
-  -moz-transition-property: all;
-  -o-transition-property: all;
-  -webkit-transition-property: all;
-  transition-property: all;
-  -moz-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -moz-transition-timing-function: ease-in;
-  -o-transition-timing-function: ease-in;
-  -webkit-transition-timing-function: ease-in;
-  transition-timing-function: ease-in;
 }
 
 .button {
@@ -473,19 +266,6 @@ ul li {
   clear: both;
 }
 
-.row.collapse>.column,
-.row.collapse>.columns {
-  position: relative;
-  padding-left: 0;
-  padding-right: 0;
-  float: left;
-}
-
-.row.collapse .row {
-  margin-left: 0;
-  margin-right: 0;
-}
-
 .row .row {
   width: auto;
   margin-left: -0.9375em;
@@ -506,60 +286,6 @@ ul li {
   clear: both;
 }
 
-.row .row.collapse {
-  width: auto;
-  margin: 0;
-  max-width: none;
-  *zoom: 1;
-}
-
-.row .row.collapse:before,
-.row .row.collapse:after {
-  content: " ";
-  display: table;
-}
-
-.row .row.collapse:after {
-  clear: both;
-}
-
-@media only screen and (max-width: 40em) {
-
-  .row {
-    width: 100%;
-    padding: 0 20px !important;
-  }
-
-  .row .grid-1,
-  .row .grid-2,
-  .row .grid-3,
-  .row .grid-4,
-  .row .grid-5,
-  .row .grid-6,
-  .row .grid-7,
-  .row .grid-8,
-  .row .grid-9,
-  .row .grid-10,
-  .row .grid-11,
-  .row .grid-12 {
-    float: none;
-    width: 100% !important;
-    margin: 0 !important;
-    position: static !important;
-  }
-}
-
-/* max-width 640px, mobile-only styles, use when QAing mobile issues */
-@media only screen and (min-width: 40.063em) and (max-width: 64em) {
-
-  .row .grid-1,
-  .row .grid-2,
-  .row .grid-3,
-  .row .grid-4 {
-    width: 48.2% !important;
-  }
-}
-
 /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 body,
 html {
@@ -574,9 +300,6 @@ body {
 h1,
 h2,
 h3,
-h4,
-h5,
-h6,
 body {
   line-height: 1.8;
   letter-spacing: 0.15em;
@@ -595,24 +318,10 @@ a:hover {
   color: #7ed2f0;
 }
 
-.bold {
-  font-weight: bold;
-}
-
-.serif,
-div.contents.row div.content_post p {
-  font-family: 'ほのか明朝', serif;
-}
-
-.ultra {
-  font-size: 2em !important;
-}
-
 ::selection {
   background: #D8D8D8;
 }
 
-.transition,
 a,
 form input[type="submit"] {
   -moz-transition-property: all;

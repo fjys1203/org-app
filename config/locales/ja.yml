@@ -1,0 +1,16 @@
+ja:
+  activerecord:
+    attributes:
+      user:
+        nickname: ニックネーム
+        first_name: 名
+        last_name: 姓
+        text: テキスト
+        birthday: 誕生日
+        email: メールアドレス
+        password: パスワード
+        password_confirmation: パスワード(確認用)
+  devise:
+    sessions:
+      user:
+        signed_in: ログインに成功しました。
