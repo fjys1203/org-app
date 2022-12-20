@@ -621,7 +621,7 @@ div.contents.row .success h3 {
 form input,
 form textarea {
   width: 70%;
-  margin: 15px;
+  margin: 5px;
   padding: 10px;
   border: 1px solid #D8D8D8;
   border-radius: 5px;
@@ -675,6 +675,6 @@ footer p {
 .input-birth-wrap {
   display: flex;
   height: 35px;
-  margin: 15px;
+  margin: 25px;
   font-family: "游ゴシック", "YuGothic";
 }
