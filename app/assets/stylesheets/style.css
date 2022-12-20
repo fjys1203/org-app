@@ -621,7 +621,7 @@ div.contents.row .success h3 {
 form input,
 form textarea {
   width: 70%;
-  margin: 25px;
+  margin: 15px;
   padding: 10px;
   border: 1px solid #D8D8D8;
   border-radius: 5px;
@@ -641,7 +641,6 @@ form input[type="submit"]:hover {
 }
 
 .container {
-  margin: 20px 0;
   padding: 30px;
   box-shadow: 0 0 10px rgba(41, 41, 41, 0.2);
   background-color: white;
@@ -673,3 +672,9 @@ footer p {
    color: blue;
 } 
 
+.input-birth-wrap {
+  display: flex;
+  height: 35px;
+  margin: 15px;
+  font-family: "游ゴシック", "YuGothic";
+}

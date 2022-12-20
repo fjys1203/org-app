@@ -14,3 +14,7 @@ ja:
     sessions:
       user:
         signed_in: ログインに成功しました。
+      remember_me: ログイン情報を記憶する
+  simple_calendar:
+    next: 次へ
+    previous: 前へ
