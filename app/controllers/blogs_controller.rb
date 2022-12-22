@@ -15,8 +15,11 @@ class BlogsController < ApplicationController
 
   def create
     @blog = Blog.create(blog_parameter)
-    @blog.save
-    redirect_to root_path
+    if @blog.save
+      redirect_to root_path
+    else
+      redirect_to new_blog_path
+    end
   end
 
   def destroy

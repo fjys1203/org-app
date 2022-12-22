@@ -356,20 +356,6 @@ header.header div.header__bar.row div.grid-6 a.post:hover {
   color: #7ed2f0;
 }
 
-.title {
-  font-weight: bold;
-}
-
-.title--big {
-  font-size: 1.8em;
-  font-weight: bold;
-}
-
-.title--big i {
-  font-style: italic;
-  font-size: 2em;
-}
-
 header.header {
   padding: 10px;
   border-bottom: 1px solid #D8D8D8;
@@ -637,7 +623,7 @@ form input[type="submit"] {
 }
 
 form input[type="submit"]:hover {
-  background-color: #2d697f;
+  background-color: #57C3E9;
 }
 
 .container {
@@ -677,4 +663,37 @@ footer p {
   height: 35px;
   margin: 25px;
   font-family: "游ゴシック", "YuGothic";
+}
+
+ /* タブレット表示時 */
+ @media (max-width: 1024px) {
+}
+
+ /* スマホ表示時 */
+ @media (max-width: 599px) {
+  .row {
+    width: 100%;
+    padding: 0 20px !important;
+  }
+
+  header.header{
+    height: 90px;
+  }
+
+  .grid-6{
+    font-size: 14px;
+  }
+
+  .simple_calendar{
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .calendar-heading{
+    height: 50px;
+  }
+
+  .contents.row{
+    padding: 0 50px;
+  }
 }
